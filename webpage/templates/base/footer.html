@@ -1,0 +1,31 @@
+{% load static %}
+<footer class="footer">
+    <div class="container">
+        <div class="footer_top">
+            <h3 class="heading_footer">EL COMILON</h3>
+            <ul class="navbar_footer">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'carta' %}">Carta</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'reservas' %}">Reservas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'locales' %}">Locales</a>
+                </li>
+            </ul>
+            <div class="social_icon_footer">
+                <span class="icon_content_footer"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="icon_content_footer"><i class="fa-brands fa-twitter"></i></span>
+                <span class="icon_content_footer"><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+        <div class="footer_botton_section">
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,41 @@
+body{
+  background-color: #ededed;
+  margin: 0;
+  font-family: Arial, sans-serif;   
+}
+
+.navbar {
+	height: 50px;
+	width: 100%;
+	background-color: #4d4d4d;
+	position: relative;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+

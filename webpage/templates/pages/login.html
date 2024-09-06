@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style-registro.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+    <title>EL COMILON | Iniciar Sesión</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-5 p-3 bg-white shadow box-area position-relative">
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box position-relative">
+            </div> 
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <h2 class="text-secondary">¡Bienvenido de nuevo!</h2>
+                        <p class="text-secondary">Inicia sesión para continuar disfrutando de nuestros deliciosos platos.</p>
+                    </div>
+                    <form id="loginForm" method="post" action="{% url 'login' %}">
+                        {% csrf_token %}
+                        <div class="input-group mb-3">
+                            <input type="text" name="username" id="username" class="form-control form-control-lg bg-light text-secondary fs-6" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" name="password" id="password" class="form-control form-control-lg bg-light text-secondary fs-6" placeholder="Contraseña" required>
+                        </div>
+                        <div id="errors-container" class="mb-3">
+                            {% if messages %}
+                                <div class="alert alert-danger">
+                                    {% for message in messages %}
+                                        <p>{{ message }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="recordarCuenta">
+                                <label for="recordarCuenta" class="form-check-label text-secondary"><small>¿Recordarme?</small></label>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button type="submit" class="btn btn-lg btn-primary w-100 fs-6 bg-primary">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6"><img src="{% static 'images/google-icon.png' %}" style="width:20px" class="me-2"><small>Iniciar sesión con Google</small></button>
+                    </div>
+                    <div class="row">
+                        <small class="text-secondary">¿No tienes una cuenta? <a href="{% url 'registro' %}" class="text-primary">Regístrate</a></small>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

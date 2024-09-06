@@ -1,0 +1,7 @@
+{% block content %}
+<h2>{{ producto.nombre }}</h2>
+<p>{{ producto.descripcion }}</p>
+<p>Precio: {{ producto.precio }}</p>
+<p>Disponible: {{ producto.disponible }}</p>
+<a href="{% url 'producto_list' %}">Volver a la lista</a>
+{% endblock %}

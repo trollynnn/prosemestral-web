@@ -1,0 +1,8 @@
+{% block content %}
+<h2>¿Estás seguro de que deseas eliminar "{{ producto.nombre }}"?</h2>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+</form>
+<a href="{% url 'producto_list' %}">Cancelar</a>
+{% endblock %}

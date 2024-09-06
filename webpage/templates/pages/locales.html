@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="{% static 'css/style-locales.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="header_container">
+
+        {% include 'base/navbar.html' %}
+
+        {% include 'base/off-canvas.html' %}
+
+        <div class="container contact-us">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 mb-4 contact-form">
+                    <h2 class="contact-title">Contáctenos</h2>
+                    <p class="contact-description">¡Esperamos trabajar con usted! Háganos saber si tiene alguna pregunta.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="selectOption" class="form-label">Seleccionar</label>
+                            <select class="form-select" id="selectOption">
+                                <option selected>Elige...</option>
+                                <option value="1">Opción 1</option>
+                                <option value="2">Opción 2</option>
+                                <option value="3">Opción 3</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Código de Área" style="width: 20%;">
+                                <input type="text" class="form-control" placeholder="Número de Teléfono">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 contact-info">
+                    <h4 class="contact-title">Local Nueva Providencia</h4>
+                    <p class="contact-description">Av. Nueva Providencia 2034</p>
+                    <p class="contact-description">Horario: Lunes a Domingo 12:00 a 22:00 hrs</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208.12294431164554!2d-70.61137140563542!3d-33.424101852044835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6d9ea3a2e1%3A0x25d64b9bf3ef3746!2sMaju%20Per%C3%BA%20Providencia!5e0!3m2!1ses!2scl!4v1715916623142!5m2!1ses!2scl" class="map" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        {% include 'base/footer.html' %}
+        
+    </div>
+    <script src="https://kit.fontawesome.com/0f29ac535c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

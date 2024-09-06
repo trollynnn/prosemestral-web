@@ -1,0 +1,13 @@
+{% block content %}
+<h2>Productos</h2>
+<a href="{% url 'producto_create' %}">Añadir nuevo producto</a>
+<ul>
+    {% for producto in productos %}
+    <li>
+        <a href="{% url 'producto_detail' producto.pk %}">{{ producto.nombre }}</a>
+        <a href="{% url 'producto_update' producto.pk %}">Editar</a>
+        <a href="{% url 'producto_delete' producto.pk %}">Borrar</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

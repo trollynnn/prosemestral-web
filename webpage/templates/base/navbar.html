@@ -1,0 +1,41 @@
+{% load static %}
+<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top">
+    <div class="container">
+        <div class="navbar-brand d-flex w-50 me-auto">
+            <a href="index.html" style="display: block;">
+                <img src="{% static 'images/logo.png' %}" alt="logo" style="width: 100px;">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'carta' %}">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'reservas' %}">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'locales' %}">Locales</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <button class="nav-link btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bi bi-person" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.header_container {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 8vh;
+  background-color: #F1F1F1;
+}
+
+.nav-item {
+  margin: 0px 9px;
+}
+
+.nav-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #454554;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_top {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading_footer {
+  color: #FF3A3A;
+  font-size: 24px;
+  font-weight: 700; 
+}
+
+.navbar_footer {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.icon_content_footer {
+  padding: 11px 15px;
+  background-color: rgba(27, 27, 27, 0.829);
+  color: rgb(250, 247, 247);
+  border-radius: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-iniciar-sesion {
+  background-color: #FF3A3A;
+  border-color: #FF3A3A;
+}
+
+.btn-iniciar-sesion:hover {
+  background-color: #E62626;
+  border-color: #E62626;
+}
+
+.card {
+  padding: 15px;
+  text-align: center;
+}
+
+.locales-container {
+  margin-top: 100px; 
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-info {
+  width: 35%;
+  text-align: center;
+}
+
+.contact-title {
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact-description {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #FF3A3A;
+  border-color: #FF3A3A;
+}
+
+.btn-primary:hover {
+  background-color: #E62626;
+  border-color: #E62626;
+}

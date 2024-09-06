@@ -1,0 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.header_container {
+  width: 100%;
+  height: 80vh;
+  background-image: url('../images/fondo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 100%;
+  height: 8vh;
+  background-color: #F1F1F1;
+}
+
+.nav-item {
+  margin: 0px 9px;
+}
+
+.nav-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.home_section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.heading_first_home {
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  color: #454554;
+  letter-spacing: 1px;
+}
+
+.heading_second_home {
+  font-size: 55px;
+  font-weight: 900;
+  color: #454554;
+}
+
+.heading_third_home {
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  color: #FF3A3A;
+}
+
+.btn_home_content {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 11px 29px;
+  background-color: #FF3A3A;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+.about_us {
+  width: 100%;
+  height: auto;
+  border: 40px solid transparent;
+}
+
+.about-content {
+  font-size: 18px;
+  font-weight: 350;
+  color: #454554;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #454554;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_top {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading_footer {
+  color: #FF3A3A;
+  font-size: 24px;
+  font-weight: 700; 
+}
+
+.navbar_footer {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.icon_content_footer {
+  padding: 11px 15px;
+  background-color: rgba(27, 27, 27, 0.829);
+  color: rgb(250, 247, 247);
+  border-radius: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-iniciar-sesion {
+  background-color: #FF3A3A;
+  border-color: #FF3A3A;
+}
+
+.btn-iniciar-sesion:hover {
+  background-color: #E62626;
+  border-color: #E62626;
+}
